@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation{
+    background-image: linear-gradient(dodgerblue, rgb(3, 41, 80));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+#navigation > ul > li{
+    list-style: none;
+    margin: 0px 5px;
+    margin-left: -5px;
+    padding: 15px 0px;
+}
+
+#navigation > ul > li >a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding: 15px 20px;
+    transition: 0.5s;
+}
+
+#navigation > ul > li:first-child > a{
+    border-left: 1px solid white;
+}
+
+#navigation > ul > li:hover > a{
+    background-color: rgb(5, 67, 129);
+}
+
+#logo > h1{
+    color: white;
+    margin-left: 50px;
+}
+
+#logofastlatter{
+    color: red;
+    font-size: 45px;
+}
+
+
+/* Dropdown menu code start */
+
+.Dropdown{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 190px;
+    position: absolute;
+    transition: 0.5s;
+    box-shadow: 10px 10px 8px black;
+    transform: scaley(0);
+    transform-origin: top;
+}
+
+.Dropdown > li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+}
+
+.Dropdown > li:hover{
+    background-color:rgb(5, 67, 129);
+}
+
+.Dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+
+.Dropdown > li >a{
+    text-decoration: none;
+    color: white;
+}
+
+#navigation > ul > li:hover > .Dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+/* Hero Area Code Start Here */
+
+.hero-area{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.169),rgba(0, 0, 0, 0.587)), url('IMAGES/WhatsApp\ Image\ 2024-04-05\ at\ 14.56.30_085b809b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    height: 90vh;
+}
+
+.header-container{
+    padding-top: 100px;
+}
+
+.header-container > h1{
+    width: 400px;
+    margin: 20px auto;
+    background-color: rgba(4, 60, 115, 0.63);
+    font-size: 50px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.header-container > button{
+    font-size: 10px;
+    padding: 15px 20px;
+    margin: 20px;
+    background-color: #03396f90;
+    color: white;
+    border-radius: 30px 10px 30px 10px;
+    border: 4px solid green;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-container > button:hover{
+    background-color: rgba(0, 0, 0, 0.142)
+}
+
+.header-container > h4{
+    font-size: 25px;
+    color: #482b2b;
+}
+
+.header-container > h5{
+    font-size: 15px;
+    color:#482b2b;
+    margin-bottom: 40px;
+}
+
+.social-icon > a{
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon > a > i{    
+    line-height: 1.3;
+    margin: 10px 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #00800000;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social-icon > a > i:hover{
+    background-color:#03396f90;
+    border: 2px solid green;
+    transform: rotate(360deg);
+}
+
+
+/* First Section Code Start Here */
+
+#first-container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.learn-programming{
+width: 300px;
+text-align: center;
+padding: 30px 10px;
+transition: 0.5s;
+}
+
+.learn-programming > i{
+    font-size: 50px;
+}
+
+.learn-programming > h2{
+    margin: 15px 0px;
+}
+
+.learn-programming:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+
+
+/* Second Section Code Start Here */
+
+.smartarea-title > h2{
+font-size: 40px;
+text-align: center;
+position: relative;
+}
+
+.smartarea-title > h2::after {
+    content: '';
+    top: 46px;
+    left: 579px;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(170, 8, 8);
+    position: absolute;
+}
+
+.smart-area{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-between;
+}
+.smart-area-text{
+    width: 500px;
+}
+.smart-area-text > h2{
+    margin: 20px 0;
+}
+.smart-area-text > h4{
+    color: rgb(170, 8, 8);
+}
+.smart-area-text > a{
+    text-decoration: none;
+    background-color: rgb(170, 8, 8);
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.smart-area-text > a:hover{
+    background-color: rgb(99, 5, 5);
+}
+
+
+/* Third Section Code Here */
+
+#third-section{
+    background-color: #fafafa;
+}
+.services-area-tital{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+.services-area-tital > h2{
+    font-size: 40px;
+}
+
+.each-services-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    padding-bottom: 60px; 
+}
+.services-area{
+    width: 1000px;
+    margin: auto;
+}
+.each-services{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.each-services:hover{
+    background-color: #81adbd;
+}
+.each-services > i{
+    font-size: 40px;
+    color: #910707;
+}
+.each-services > h3{
+    margin: 15px 0;
+}
+
+
+
+/* Fourth Section Code Start Here */
+
+#Fourth-Section{
+    background-color: whitesmoke;
+}
+.pricing-area-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.pricing-area-parent{
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.Pricing-tital{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.single-card-img{
+    width: 310px;
+}
+.single-card-img > img{
+    max-width: 100%;
+}
+.single-card{
+    width: 310px;
+    text-align: center;
+    box-shadow:5px 5px 10px grey;
+}
+.single-card > h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.month-Pricing{
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0;
+    margin: 15px 20px;
+}
+.month-Pricing > .month-Pricing-span1{
+    font-size: 25px;
+}
+.month-Pricing > .month-Pricing-span2{
+    color: gray;
+}
+.single-card > button{
+    background-color:rgb(170, 8, 8);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.single-card > button:hover{
+    background-color:rgba(170, 8, 8, 0) ;
+    color: black;
+}
+.single-card > a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Testimonial Section Code Start Here */
+#five-section{
+    background-color: bisque;
+}
+.testo-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.testomonial-title{
+text-align: center;
+padding: 50px 0;
+}
+.testomonial-title h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.testomonial-title h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+.testo-singleCard-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+}
+
+.testo-singleCard{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+.testo-image-div{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testo-image-div img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.testo-span{
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.test-ratting{
+    color:	#ffa534;
+    margin-top: 10px;
+}
+
+
+/* Perallax Section Code Start Here */
+
+#perallax-section{
+    background-image: url('IMAGES/parallax.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;  
+}
+.perallax-items-parent{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.perallax-single-item i{
+    font-size: 40px;
+}
+.perallax-single-item h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+
+/* Blog Section Code Start Here */
+
+.blog-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.blog-item-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.blog-image{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+.blog-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.blog-image-icon-div:hover .blog-icon{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.482);
+}
+.blog-image-icon-div{
+    position: relative;
+    overflow: hidden;
+}
+.blog-image-icon-div:hover .blog-image{
+    transform: scale(1.6);
+}
+.blog-icon i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.single-item-text{
+    text-align: center;
+    margin: 10px 0;
+}
+.single-item-text p{
+    margin-top: 10px;
+    color: rgba(67, 62, 62, 0.607);
+}
+
+
+/* Contact Section Code Start Here  */
+
+.contact-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.Form-Parent{
+    background-color: #EAECF0;
+}
+.fullname-email-parent{
+    display: flex;
+}
